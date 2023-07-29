@@ -3,13 +3,11 @@ package com.example.svastirinterview
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.example.svastirinterview.adapters.itemFunctions
 import com.example.svastirinterview.databinding.ActivityDetailPageBinding
 import com.example.svastirinterview.models.Item
 import com.google.gson.Gson
-import java.io.Serializable
 
 class DetailPage : AppCompatActivity() {
     lateinit var listener:itemFunctions

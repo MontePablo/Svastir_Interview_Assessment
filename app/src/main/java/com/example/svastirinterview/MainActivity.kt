@@ -14,7 +14,6 @@ import com.example.svastirinterview.models.Item
 import com.example.svastirinterview.viewmodels.ItemModelFactory
 import com.example.svastirinterview.viewmodels.ItemViewModel
 import com.google.gson.Gson
-import java.io.Serializable
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(), itemFunctions {
