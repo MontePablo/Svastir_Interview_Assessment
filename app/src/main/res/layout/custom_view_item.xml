@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="15dp"
+    android:id="@+id/item_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintWidth_percent=".3"
+        android:src="@drawable/login"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/item_image"/>
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:autoSizeMinTextSize="10sp"
+        android:autoSizeTextType="uniform"
+        android:text="this is title"
+        android:textStyle="bold"
+        android:autoSizeMaxTextSize="25sp"
+        app:layout_constraintHeight_percent=".35"
+        app:layout_constraintLeft_toRightOf="@id/item_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".65" />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:autoSizeTextType="uniform"
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".4"
+        app:layout_constraintWidth_percent=".06"
+        android:autoSizeMaxTextSize="20sp"
+        android:text="id :"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/item_image"
+        app:layout_constraintTop_toBottomOf="@id/item_title"/>
+
+    <TextView
+        android:id="@+id/item_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeTextType="uniform"
+        android:text="111"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHeight_percent=".4"
+        app:layout_constraintLeft_toRightOf="@id/text"
+        app:layout_constraintTop_toBottomOf="@id/item_title"
+        app:layout_constraintWidth_percent=".12" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintHeight_percent=".4"
+        app:layout_constraintWidth_percent=".25"
+        android:autoSizeMaxTextSize="20sp"
+        android:text="album id: "
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toEndOf="@+id/item_id"
+        app:layout_constraintTop_toBottomOf="@+id/item_title" />
+
+    <TextView
+        android:id="@+id/item_albumid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHeight_percent=".4"
+        app:layout_constraintWidth_percent=".1"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeTextType="uniform"
+        android:text="4"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/item_title" />
+    <ImageButton
+        android:id="@+id/item_save"
+        android:layout_width="40dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
